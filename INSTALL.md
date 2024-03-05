@@ -19,7 +19,15 @@ On your web server, create a database called "authentication".  Then, run [datab
 
 Configuration for this application is handled primarily through the file [src/services/.env](src/services/.env)".  
 
-### 1. Configure Database
+### 1. Configure Paths
+
+Configure the url to the client. This is the url of your web server plus any dereferences that are required to get to the index.html of the authentication app.  This url is used when sending emails for account activation.
+
+```
+APP_CLIENT_URL=
+```
+
+### 2. Configure Database
 
 In order to connect with your database, make sure that the following fields are set properly:
 
@@ -32,7 +40,7 @@ DB_USERNAME=root
 DB_PASSWORD=root
 ```
 
-### 1. Configure Email
+### 3. Configure Email
 
 In order for this application to be able to send account verification or account recovery emails, an email server must be specified.  Make sure that the following fields are set properly:
 
