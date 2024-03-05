@@ -9,7 +9,7 @@
 To install the application, follow the steps below:
 
 ### 1. Copy Files
-First copy the files contained in the /src directory to your web server.
+First copy the files contained in the `src/` directory to your web server.
 
 ### 2. Create Database
 
@@ -17,7 +17,7 @@ On your web server, create a database called "authentication".  Then, run [datab
 
 ## Configuration
 
-Configuration for this application is handled primarily through the file "services/.env".  
+Configuration for this application is handled primarily through the file [src/services/.env](src/services/.env)".  
 
 ### 1. Configure Database
 
