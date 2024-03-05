@@ -1,0 +1,443 @@
+/******************************************************************************\
+|                                                                              |
+|                                 styles.less                                  |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2019, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+/******************************************************************************\
+|                                                                              |
+|                                  buttons.less                                |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2019, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+.btn:focus {
+  outline: none !important;
+}
+.buttons btn {
+  margin-top: 5px;
+}
+@media (max-width: 479px) {
+  .buttons btn {
+    width: 100%;
+  }
+}
+/******************************************************************************\
+|                                                                              |
+|                                   forms.less                                 |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2019, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+.form-label,
+.control-label {
+  float: left;
+  width: 25%;
+}
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.separator {
+  text-align: center;
+  font-weight: bold;
+}
+.separator::before,
+.separator::after {
+  content: "- ";
+}
+.required label:after,
+label.required:after,
+span.required:after {
+  content: "*";
+  color: #c2002f;
+  margin-left: 5px;
+}
+.alert label {
+  margin-right: 10px;
+}
+/*
+ * country selector styles
+ */
+.country-code.input-group {
+  width: 100px;
+}
+#country-selector {
+  position: absolute;
+}
+#country-selector .dropdown-menu {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#country-selector button img {
+  margin-top: -3px;
+  margin-left: 5px;
+}
+.country-code.input-group {
+  width: 100px;
+}
+/*
+ * validation styles
+ */
+label.error {
+  font-weight: bold;
+  color: #c2002f;
+  padding-top: 0;
+  background: url(../images/forms/error.png) 5px 0px no-repeat;
+  padding-left: 30px;
+}
+label.error:empty {
+  display: none;
+}
+label.error.valid {
+  display: none;
+}
+.form-group.error input,
+.form-group.error textarea {
+  border: 1px solid #c2002f;
+}
+/*
+ * popover styles
+ */
+.popover {
+  max-width: 360px;
+  width: auto;
+}
+/******************************************************************************\
+|                                                                              |
+|                                   modals.less                                |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2019, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+.modal {
+  pointer-events: none;
+  padding-bottom: 30px;
+}
+.modal .modal-dialog {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+}
+.modal .modal-dialog .modal-content {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: auto;
+  width: 600px;
+  min-width: 300px;
+}
+.modal .modal-dialog .modal-content .modal-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+.modal .modal-dialog .modal-content .modal-header.ui-draggable-handle {
+  cursor: move;
+}
+@media (min-width: 768px) and (max-height: 550px) {
+  .modal {
+    text-align: center;
+  }
+  .modal:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+.modal.backdrop {
+  pointer-events: all;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.modal-extents {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 480px) {
+  .modal .modal-dialog .modal-header {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .modal .modal-dialog .modal-body.flexible {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .modal .modal-dialog .modal-footer {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .modal .modal-dialog .modal-footer .buttons {
+    float: right;
+    text-align: left;
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+  .modal .modal-dialog .modal-footer .buttons .btn,
+  .modal .modal-dialog .modal-footer .buttons .btn + .btn {
+    margin-bottom: 5px;
+  }
+  .modal .modal-dialog:not(.ui-resizable) .modal-body .vertically.scrollable {
+    max-height: 220px;
+  }
+  .modal .modal-dialog:not(.ui-resizable) .modal-body {
+    overflow: auto;
+  }
+}
+body[device="desktop"] .modal.in .modal-dialog {
+  transform: translateZ(0);
+}
+@media (max-width: 480px) {
+  .modal-extents {
+    height: auto !important;
+    margin: 0;
+  }
+  .modal {
+    padding-bottom: 0;
+  }
+  .modal .modal-dialog .modal-header .modal-title {
+    margin-right: 0;
+  }
+  .modal .modal-dialog .modal-header .buttons {
+    margin-left: 0;
+  }
+  .modal .modal-dialog .modal-body .vertically.scrollable {
+    max-height: none;
+  }
+  .modal .modal-dialog .modal-footer .notes {
+    float: none;
+    text-align: left;
+  }
+  .modal .modal-dialog .modal-footer .buttons {
+    margin-bottom: 10px;
+  }
+  .modal .modal-dialog:not(.maximized) {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+/******************************************************************************\
+|                                                                              |
+|                                    navs.less                                 |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2019, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+.navbar-right {
+  overflow: hidden;
+}
+.navbar-form.navbar-right {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.nav-tabs {
+  margin-bottom: 20px;
+}
+/******************************************************************************\
+|                                                                              |
+|                                   layout.less                                |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2019, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+h1 i {
+  float: left;
+  padding-right: 5px;
+}
+/*
+ * mobile layout styles
+ */
+@media (max-width: 767px) {
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/*
+ * icon styles
+ */
+i.fa {
+  margin-right: 5px;
+}
+/******************************************************************************\
+|                                                                              |
+|                            dialog-transitions.less                           |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines the dom and svg visual styles for this application.      |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2019, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+.modal.opening {
+  -webkit-animation: opening 0.5s;
+  -moz-animation: opening 0.5s;
+  -ms-animation: opening 0.5s;
+  -o-animation: opening 0.5s;
+  animation: opening 0.5s;
+}
+@keyframes opening {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.modal.closing {
+  -webkit-animation: closing 0.5s;
+  -moz-animation: closing 0.5s;
+  -ms-animation: closing 0.5s;
+  -o-animation: closing 0.5s;
+  animation: closing 0.5s;
+}
+@keyframes closing {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+.modal.closed {
+  display: none;
+}
+.modal.minimizing {
+  -webkit-animation: minimizing 0.5s;
+  -moz-animation: minimizing 0.5s;
+  -ms-animation: minimizing 0.5s;
+  -o-animation: minimizing 0.5s;
+  animation: minimizing 0.5s;
+}
+@keyframes minimizing {
+  from {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-25%, 50%) scale(0);
+  }
+}
+.modal.unminimizing {
+  -webkit-animation: unminimizing 0.5s;
+  -moz-animation: unminimizing 0.5s;
+  -ms-animation: unminimizing 0.5s;
+  -o-animation: unminimizing 0.5s;
+  animation: unminimizing 0.5s;
+}
+@keyframes unminimizing {
+  from {
+    opacity: 0;
+    transform: translate(-25%, 50%) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+.modal.minimized {
+  display: none;
+}
