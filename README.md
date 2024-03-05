@@ -1,14 +1,15 @@
 <p align="center">
-  <div align="center">
     <img src="./images/icons/icon.svg" alt="Logo" style="width:200px">
-  </div>
 </p>
 
 # Authentication
 
 This is a base framework for building web applications that require user account registration and authentication.
 
-<img src="images/screen-shots/home.png" style="border: 2px solid lightgrey;">Home Page
+<p class="figure" align="center">
+  <img src="images/screen-shots/home.png" style="width:75%; border: 2px solid lightgrey !important;" />
+  <div class="caption">Home Page</div>
+</p>
 
 This framework provides the following functions:
 
