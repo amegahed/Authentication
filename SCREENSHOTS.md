@@ -10,7 +10,7 @@ Below are some screen shots of the user interface:
 This is the first view that you see upon visiting the application
 
 <p class="figure" align="center">
-  <img src="images/screen-shots/welcome.png" width="75%" style="border: 2px solid lightgrey;" />
+  <kbd><img src="images/screen-shots/welcome.png" width="75%" style="border: 2px solid lightgrey;" /></kbd>
 </p>
 
 ## Registration

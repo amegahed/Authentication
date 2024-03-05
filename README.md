@@ -6,8 +6,8 @@
 
 This is a base framework for building web applications that require user account registration and authentication.
 
-<p class="figure" align="center">
-  <img src="images/screen-shots/home.png" width="75%" style="border: 2px solid lightgrey;" />
+<p align="center" width="75%">
+  <kbd align="center"><img src="images/screen-shots/home.png" style="border: 2px solid lightgrey;" /></kbd>
 </p>
 
 This framework provides the following functions:
