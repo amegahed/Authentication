@@ -7,7 +7,7 @@
 This is a base framework for building web applications that require user account registration and authentication.
 
 <p class="figure" align="center">
-  <img src="images/screen-shots/home.png" style="width:75%; border: 2px solid lightgrey !important;" />
+  <img src="images/screen-shots/home.png" style="border: 2px solid lightgrey !important;" />
   <div class="caption">Home Page</div>
 </p>
 
